@@ -29,7 +29,7 @@ class sfTestUnderControlTask extends sfBaseTask
     $this->detailedDescription = <<<EOF
 The [test:undercontrol|INFO] task launches all unit and functional tests for use with phpUnderControl:
 
-  [./symfony test:undercontrol /dir/to/cruisecontrol/project/build/output.xml|INFO]
+  [./symfony test:undercontrol /dir/to/cruisecontrol/project/build|INFO]
 
 The task launches all tests found in [test/|COMMENT] and writes the output in phpUnderControl-compatible XML to [PATH|COMMENT].
 
