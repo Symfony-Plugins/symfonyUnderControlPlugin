@@ -67,10 +67,6 @@ class SymfonyUnderControlTest
     $this->time_spent = $time_end - $time_start;
 
     $this->parseTestOutput();
-
-    // exit status helps to detect failed builds
-    if( strpos( $this->output, 'Failed test' ) !== false && strpos( $this->output, 'not ok' ) !== false )
-      exit( 1 );
   }
 
   /**
@@ -347,5 +343,4 @@ class SymfonyUnderControlTest
   {
     return str_replace(sfConfig::get('sf_root_dir') . '/', '', $file);
   }
-
 }
